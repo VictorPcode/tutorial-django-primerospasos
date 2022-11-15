@@ -5,5 +5,15 @@
 <h1>JIRESTORE</h1>
 <p>BIENVENIDOS A LA MEJOR TIENDA</p>
 
+<table border="1" style="text-align: center; width: 100%; border: 1px solid red; background: rgba(246, 9, 9, 0.148)">
+    {% for x in mymembers %}
+    <tr>
+    <td>{{ x.id }}</td>
+    <td>{{ x.firstname }}</td>
+    <td>{{ x.lastname }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+
 </body>
 </html>
